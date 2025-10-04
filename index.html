@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+</head>
+
+<body>
+    <h1>ZoCaf Ordering System</h1>
+
+    <form>
+        <input id="nan_tea" type="checkbox"> Nan Tea - PHP85.00<br>
+        <input id="caramel_macchiato" type="checkbox" > Caramel Macchiato - PHP99.99<br>
+        <input id="red_velvet_cake" type="checkbox"> Red Velvet Cake - PHP350.00<br>
+        <input id="iced_tea" type="checkbox"> Iced tea - PHP70.00<br>
+        <input id="sparkling_water" type="checkbox"> Sparkling Water - PHP40.00<br>
+    </form>
+
+    <h3>Customer Details</h3>
+    <input id="cust_name" type="text" placeholder="Enter your Name"><br>
+    <input id="cust_address" type="text" placeholder="Enter your Address"><br>
+    <input id="cust_contact" type="text" placeholder="Enter your Contact Number"><br>
+
+    <input type="button" py-click="create_order" value="Place Order">
+
+    <div id="output"></div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
